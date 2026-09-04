@@ -5,19 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seatwork 1</title>
 
-    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
-    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
 
+        <style>
+               body {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            background-color: #f8ecf3;
+            color: #2c1b1b;
+            padding: 20px;
+            max-width: 700px;
+            margin: 40px auto;
+           
+        }
+
+        
+        #me_output {
+            background-color: #f1dfdf;
+            border-radius: 15px;
+            padding: 20px 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a2c2c;
+        }
+
+        h2 {
+            color: #4a2c2c;
+        }
+    </style>
 </head>
 <body>
 
-    <h1>Python Data Types</h1>
+    <h1>My Introduction page</h1>
 
-    <div id="div1"></div>
+    <div id="me_output"></div>
 
        <script type="py" src="main.py"></script>
 
-       
+    <br>
+    <h2>Number Calculator</h2>
+    <form action="">
+        <input type="text" id="num1box" placeholder="Enter first number">
+        <br>
+        <input type="text" id="num2box" placeholder="Enter second number">
+        <br>
+        <button type="button" py-click="calculate_numbers">Calculate</button>
+    </form>
+
+
     
 </body>
 </html>
